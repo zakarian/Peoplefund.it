@@ -1,0 +1,256 @@
+	#pp_full_res {
+		border: 5px solid #030303;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-khtml-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+	div.pp_pic_holder a:focus { outline:none; }
+
+	div.pp_overlay {
+		background: #000;
+		display: none;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 9500;
+	}
+	
+	div.pp_pic_holder {
+		display: none;
+		position: absolute;
+		width: 100px;
+		z-index: 10000;
+	}
+		
+		.pp_top {
+			height: 20px;
+			position: relative;
+		}
+			* html .pp_top { padding: 0 20px; }
+		
+			.pp_top .pp_left {
+				height: 20px;
+				left: 0;
+				position: absolute;
+				width: 20px;
+			}
+			.pp_top .pp_middle {
+				height: 20px;
+				left: 20px;
+				position: absolute;
+				right: 20px;
+			}
+				* html .pp_top .pp_middle {
+					left: 0;
+					position: static;
+				}
+			
+			.pp_top .pp_right {
+				height: 20px;
+				left: auto;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 20px;
+			}
+		
+		.pp_content { height: 40px; }
+		
+		.pp_content .ppt {
+			left: auto;
+			margin-bottom: 5px;
+			position: relative;
+			top: auto;
+		}
+		
+		.pp_fade { display: none; }
+		
+		.pp_content_container {
+			position: relative;
+			text-align: left;
+			width: 100%;
+		}
+		
+			.pp_content_container .pp_left { padding-left: 20px; }
+			.pp_content_container .pp_right { padding-right: 10px; }
+		
+			.pp_content_container .pp_details {
+				margin: 10px 0 2px 0;
+			}
+				.pp_description {
+					display: none;
+					margin: 0 0 5px 0;
+				}
+				
+				.pp_nav {
+					clear: left;
+					float: left;
+					margin: 3px 0 0 0;
+				}
+				
+					.pp_nav p {
+						float: left;
+						margin: 2px 4px;
+					}
+				
+					.pp_nav a.pp_arrow_previous,
+					.pp_nav a.pp_arrow_next {
+						display: block;
+						float: left;
+						height: 15px;
+						margin-top: 3px;
+						overflow: hidden;
+						text-indent: -10000px;
+						width: 14px;
+					}
+		
+		.pp_hoverContainer {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 2000;
+		}
+		
+		a.pp_next {
+			background: url(../../img/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;
+			display: block;
+			float: right;
+			height: 100%;
+			text-indent: -10000px;
+			width: 49%;
+		}
+			
+		a.pp_previous {
+			background: url(../../img/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;
+			display: block;
+			float: left;
+			height: 100%;
+			text-indent: -10000px;
+			width: 49%;
+		}
+		
+		a.pp_expand,
+		a.pp_contract {
+			cursor: pointer;
+			display: none;
+			height: 20px;	
+			position: absolute;
+			right: 30px;
+			text-indent: -10000px;
+			top: 10px;
+			width: 20px;
+			z-index: 20000;
+		}
+			
+		a.pp_close {
+			display: block;
+			float: right;
+			position: absolute;
+			top: 12px;
+			right: 24px;
+			text-align: center
+		}
+		
+		
+		a.pp_close {
+			display: block;
+			cursor: pointer;
+			height: 15px;
+			line-height: 13px;
+			width: 15px;
+			background: #999999;
+			text-decoration: none;
+			color: #FFF;
+			-moz-border-radius: 50px;
+			-webkit-border-radius: 50px;
+			-khtml-border-radius: 50px;
+			border-radius: 50px;
+			font-size: 11px;
+		}
+		a.pp_close:hover {
+			background: #030303;
+		}		
+		.pp_bottom {
+			height: 20px;
+			position: relative;
+		}
+			* html .pp_bottom { padding: 0 20px; }
+			
+			.pp_bottom .pp_left {
+				height: 20px;
+				left: 0;
+				position: absolute;
+				width: 20px;
+			}
+			.pp_bottom .pp_middle {
+				height: 20px;
+				left: 20px;
+				position: absolute;
+				right: 20px;
+			}
+				* html .pp_bottom .pp_middle {
+					left: 0;
+					position: static;
+				}
+				
+			.pp_bottom .pp_right {
+				height: 20px;
+				left: auto;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 20px;
+			}
+		
+		.pp_loaderIcon {
+			display: block;
+			height: 24px;
+			left: 50%;
+			margin: -12px 0 0 -12px;
+			position: absolute;
+			top: 50%;
+			width: 24px;
+		}
+		
+		#pp_full_res {
+			line-height: 1 !important;
+		}
+		
+			#pp_full_res .pp_inline {
+				text-align: left;
+			}
+			
+				#pp_full_res .pp_inline p { margin: 0 0 15px 0; }
+	
+		div.ppt {
+			color: #fff;
+			display: none;
+			font-size: 17px;
+			left: 0;
+			position: absolute;
+			top: 0;
+			z-index: 9999;
+		}
+
+/* ------------------------------------------------------------------------
+	Miscellaneous
+------------------------------------------------------------------------- */
+
+	.clearfix:after {
+	    content: "."; 
+	    display: block; 
+	    height: 0; 
+	    clear: both; 
+	    visibility: hidden;
+	}
+
+	.clearfix {display: inline-block;}
+
+	/* Hides from IE-mac \*/
+	* html .clearfix {height: 1%;}
+	.clearfix {display: block;}
+	/* End hide from IE-mac */
+		

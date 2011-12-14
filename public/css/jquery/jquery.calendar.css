@@ -1,0 +1,90 @@
+.dpDiv {
+	padding: 5px 0;
+	border: 5px solid #5a758e;
+	background: #F6F8F9;
+}
+.dpTable {
+	/*BORDER-RIGHT: #b5d0e5 1px solid; BORDER-TOP: #b5d0e5 1px solid; BORDER-LEFT: #b5d0e5  1px solid; BORDER-BOTTOM: #b5d0e5 1px solid; */ FONT-SIZE: 10px; COLOR: #505050; FONT-FAMILY: Trebuchet MS, Verdana, Helvetica, sans-serif, Arial; /* BACKGROUND-COLOR: #FBFCFD; */ TEXT-ALIGN: center
+}
+.dpTitleTable{
+	FONT-SIZE: 10px;
+	COLOR: #505050;
+	FONT-FAMILY: Trebuchet MS, Verdana, Helvetica, sans-serif, Arial;
+	BACKGROUND-COLOR: #F0F5F9;
+	TEXT-ALIGN: center;
+	border-width: 0;
+}
+.dpTR {
+	
+}
+.dpTitleTR {
+	background-color: #CCCCCC;
+	font-size: 10px;
+}
+.dpDayTR {
+}
+.dpTodayButtonTR {
+		background-color: #999999;	
+}
+.dpButtonsTR{
+}
+.dpTD {
+	BORDER-RIGHT: #e1e1e1 1px solid; BORDER-TOP: #e1e1e1 1px solid; BORDER-LEFT: #e1e1e1 1px solid; BORDER-BOTTOM: #e1e1e1 1px solid
+}
+.dpDayHighlightTD {
+	BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px solid; BORDER-LEFT: #aaaaaa 1px solid; BORDER-BOTTOM: #aaaaaa 1px solid; BACKGROUND-COLOR: #E6E6E6}
+.dpTDHover {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; BORDER-LEFT: #888888 1px solid; CURSOR: pointer; COLOR: #005da3; BORDER-BOTTOM: #888888 1px solid; 
+}
+.dpTitleTD {
+	
+}
+.dpButtonLeftTD {
+	text-align: left;	
+}
+
+.dpButtonRightTD {
+	text-align: right;	
+}
+.dpButtonCenterTD {
+	text-align: center;	
+}
+
+.dpTodayButtonTD {
+	text-align: right;	
+}
+.dpDayTD {
+	BORDER-RIGHT: #aaaaaa 1px solid;
+	BORDER-TOP: #aaaaaa 1px solid;
+	BORDER-LEFT: #aaaaaa 1px solid;
+	COLOR: #000000;
+	BORDER-BOTTOM: #aaaaaa 1px solid;
+	BACKGROUND-COLOR: #FFFFFF;
+	font-weight: normal;
+}
+.dpTitleText {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: gray
+}
+.dpDayHighlight {
+	FONT-WEIGHT: bold}
+.dpButton {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 9px;
+	PADDING-BOTTOM: 0px;
+	COLOR: gray;
+	PADDING-TOP: 0px;
+	FONT-FAMILY: Trebuchet MS, Verdana, Helvetica, sans-serif, Arial;
+	border-width: 0;
+	background-color: #F0F5F9;
+}
+.dpTodayButton {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10px;
+	COLOR: gray;
+	FONT-FAMILY: Trebuchet MS, Verdana, Helvetica, sans-serif, Arial;
+	border: 0;
+	border-width: 0;
+	background-color: #CCCCCC;
+}

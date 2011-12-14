@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+* {	
+	border: 0; 
+	outline: none; 
+	padding: 0;
+	margin: 0; 
+	list-style: none; 
+	font-weight: normal; 
+}
+
+body, html {
+	background-color: #e5eef2;
+	color: #000000;
+	font-weight: normal; 
+	font-size: 12px;
+	font-family: Verdana;
+}
+
+select,
+input {
+	color: #000000;
+	font-weight: normal; 
+	font-size: 12px;
+	font-family: Verdana;
+}
+
+header, article, section, nav, hgroup, footer 				{ display: block; }
+blockquote:before, blockquote:after, q:before, q:after  { content: "";	  }
+blockquote, q 										{ quotes: "" "";  }
+
+p		 { padding: 0 0 15px 0; 			}
+textarea	 { resize: none; 				}
+a 		 { text-decoration: underline; 	}
+a:hover   { text-decoration: none; 		}
+
+strong, b { font-weight: bold; 		  	}
+u 		 { text-decoration: underline; 	}
+i, em	 { font-style: italic; 		  	}
+abbr		 { border-bottom: 1px dashed;	}
+
+h1 {
+	font-family: Myriad Pro;
+	font-size: 26px;
+	color: #333333;
+	padding: 0 0 10px 0;
+}
+
+h2 {
+	font-family: Myriad Pro;
+	font-size: 26px;
+	color: #c37814;
+	padding: 0 0 10px 0;
+}
+
+h3 {
+	font-family: Myriad Pro;
+	font-size: 26px;
+	color: #005b7f;
+	padding: 0 0 10px 0;
+}
+
+h4 {
+	font-family: Myriad Pro;
+	font-size: 20px;
+	color: #333333;
+	padding: 0 0 10px 0;
+}
+
+h5 {
+	font-family: Myriad Pro;
+	font-size: 20px;
+	color: #c37814;
+	padding: 0 0 10px 0;
+}
+
+h6 {
+	font-family: Myriad Pro;
+	font-size: 20px;
+	color: #005b7f;
+	padding: 0 0 10px 0;
+}
+
+p {
+	color: #333333;
+	line-height: 16px;
+	padding: 0 0 15px 0;
+}
+
+a {
+	color: #c37814;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #005b7f;
+}
+
+ul,
+ol {
+	color: #333333;
+	line-height: 16px;
+	padding: 0 0 15px 0;
+}
+
+ul li {
+	list-style-type: disc;
+	margin: 0 0 0 35px;
+}
+
+ol li {
+	list-style-type: decimal;
+	margin: 0 0 0 35px;
+}
+
+.promote {
+	width: 635px;
+	background: #fff;
+}
+
+.promote .round {
+	padding: 17px 17px 0 17px;
+	margin-bottom: 17px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	overflow: auto;
+}
+
+.promote .bg-silver {
+	background: url(/img/site/help/background-silver.gif);
+}
+
+.promote .bg-blue {
+	background: url(/img/site/help/background-blue.gif);
+}
+
+.promote .bg-green {
+	background: url(/img/site/help/background-green.gif);
+}
+
+.promote .bg-pink {
+	background: url(/img/site/help/background-pink.gif);
+}
+
+.promote .bg-purple {
+	background: url(/img/site/help/background-purple.gif);
+}
+
+.promote h3 {
+	font-size: 23px !important;
+	color: #333 !important;
+}
+
+.promote .round h4 {
+	font: 20px "Myriad Pro";
+	font-weight: bold !important;
+	text-transform: uppercase !important;
+}
+
+.promote .round p {
+	font-size: 11px;
+}
+
+.promote .round span.num-bg {
+	width: 35px;
+	height: 38px;
+	padding-right: 2px;
+	float: left;
+	background: url(/img/site/help/background-numbers.png) 0 0 no-repeat;
+	text-align: center;
+	font: 24px "Myriad Pro";
+	font-weight: bold;
+	line-height: 28px;
+	color: #fff;
+}
+
+.promote .round .num1 p, .promote .round .num1 h4,
+.promote .round .num2 p, .promote .round .num2 h4,
+.promote .round .num3 p, .promote .round .num3 h4,
+.promote .round .num5 p, .promote .round .num5 h4,
+.promote .round .num6 p, .promote .round .num6 h4,
+.promote .round .num7 p, .promote .round .num7 h4,
+.promote .round .num8 p, .promote .round .num8 h4,
+.promote .round .num9 p, .promote .round .num9 h4,
+.promote .round .num10 p, .promote .round .num10 h4 {
+	width: 552px;
+	float: right;
+}
+
+.promote .round .num1 img {
+	padding-right: 7px;
+}
+
+.promote .round .num2 img {
+	margin-top: -35px;
+	float: right;
+}
+
+.promote .round .num3 img {
+	padding-left: 10px;
+	margin-top: -5px;
+	float: right;
+}
+
+.promote .img-num4 {
+	float: left;
+}
+
+.promote .round .num4 h4 {
+	width: 330px;
+	text-align: right;
+}
+
+.promote .round .num4 p { 
+	width: 330px;
+}
+
+.promote .round .num5 img {
+	padding-left: 10px;
+	float: right;
+}
+
+.promote .img-num7 {
+	float: right;
+}
+
+.promote .round .num7 h4 {
+	width: 318px;
+}
+
+.promote .round .num7 p { 
+	width: 368px;
+}
+
+.promote .round .num8 img {
+	margin-top: -25px;
+	padding-left: 10px;
+	float: right;
+}
+
+.promote .round .num10 img {
+	margin-top: -40px;
+	float: right;
+}
+
+.promote .round .button {
+	width: 187px;
+	margin: 0;
+	display: block;
+	font: 16px "Myriad Pro";
+	font-weight: bold;
+	line-height: 23px !important;
+	text-transform: uppercase !important;
+	text-align: center;
+	color: #fff !important;
+}

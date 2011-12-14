@@ -1,0 +1,31 @@
+.uploader .holder {
+	position: relative;
+	float: right;
+}
+
+.uploader {
+	width: 385px;
+	overflow: hidden;
+	}
+
+.uploader .form label {
+	width: 40px;
+	padding-top: 5px;
+}
+
+.uploader .form {
+	padding: 10px 3px;
+	}
+
+.uploader fieldset {
+	padding: 0;
+	border: none;
+	margin: 0;
+}
+
+.uploader .progress {
+	width: 377px;
+	height: 18px;
+	float: left;
+	background: url(/share/images/site/elements/progress.gif) 0 0 repeat-x;
+}

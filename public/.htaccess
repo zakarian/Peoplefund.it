@@ -1,0 +1,50 @@
+#Order deny,allow
+#Deny from all
+#AuthName "Restricted Area"
+#AuthUserFile /var/www/peoplefund.mtrdev.com/public/.htpasswd 
+#AuthType Basic 
+#Require valid-user
+#Allow from 87.119.66.225
+#Satisfy Any
+
+
+ErrorDocument 400 /404/
+ErrorDocument 401 /404/
+ErrorDocument 403 /404/
+ErrorDocument 404 /404/
+ErrorDocument 500 /404/
+
+<IfModule mod_php5.c>
+	php_value upload_max_filesize 100M
+	php_value post_max_size 100M
+	php_value max_execution_time 600
+	php_value max_input_time 600 
+</IfModule>
+
+<IfModule mod_security.c>
+    SecFilterEngine On
+    SecFilterScanPOST On
+    SecFilterCheckURLEncoding On
+    SecFilterCheckUnicodeEncoding Off
+	SecFilterDefaultAction "deny,log,status:403"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymlinks
+	RewriteEngine on
+	
+	# MAINTENANCE PAGE #
+	#RewriteCond %{REMOTE_ADDR} !^127.0.0.1
+	#RewriteCond %{REQUEST_URI} !/maintenance.php$ [NC]
+	#RewriteCond %{REQUEST_URI} !\.(jpe?g?|png|gif) [NC]
+	#RewriteRule .* /maintenance.php [L]
+
+    RewriteCond %{HTTP_HOST} ^peoplefund.it [NC]
+    RewriteRule ^(.*)$ http://www.peoplefund.it/$1 [L,R=301]
+	
+	RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+	RewriteRule (.*)$ /$1/ [R=301,L]
+	
+	RewriteCond $1 !^(index\.php(/|$)|.*\.(ico|gif|jpe?g|png|css|js|html|swf|php|htm|ttf|eot|svg)$|robots\.txt$)
+	RewriteRule ^(.*)$ /index.php?$1 [L]
+</IfModule>

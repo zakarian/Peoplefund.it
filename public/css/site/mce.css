@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+* {	
+	border: 0; 
+	outline: none; 
+	padding: 0;
+	margin: 0; 
+	list-style: none; 
+	font-weight: normal; 
+}
+
+body, html {
+	background-color: #e5eef2;
+	color: #000000;
+	font-weight: normal; 
+	font-size: 12px;
+	font-family: Verdana;
+}
+
+select,
+input {
+	color: #000000;
+	font-weight: normal; 
+	font-size: 12px;
+	font-family: Verdana;
+}
+
+header, article, section, nav, hgroup, footer 				{ display: block; }
+blockquote:before, blockquote:after, q:before, q:after  { content: "";	  }
+blockquote, q 										{ quotes: "" "";  }
+
+p		 { padding: 0 0 15px 0; 			}
+textarea	 { resize: none; 				}
+a 		 { text-decoration: underline; 	}
+a:hover   { text-decoration: none; 		}
+
+strong, b { font-weight: bold; 		  	}
+u 		 { text-decoration: underline; 	}
+i, em	 { font-style: italic; 		  	}
+abbr		 { border-bottom: 1px dashed;	}
+
+h1 {
+	font-family: Myriad Pro;
+	font-size: 26px;
+	color: #333333;
+	padding: 0 0 10px 0;
+}
+
+h2 {
+	font-family: Myriad Pro;
+	font-size: 26px;
+	color: #c37814;
+	padding: 0 0 10px 0;
+}
+
+h3 {
+	font-family: Myriad Pro;
+	font-size: 26px;
+	color: #005b7f;
+	padding: 0 0 10px 0;
+}
+
+h4 {
+	font-family: Myriad Pro;
+	font-size: 20px;
+	color: #333333;
+	padding: 0 0 10px 0;
+}
+
+h5 {
+	font-family: Myriad Pro;
+	font-size: 20px;
+	color: #c37814;
+	padding: 0 0 10px 0;
+}
+
+h6 {
+	font-family: Myriad Pro;
+	font-size: 20px;
+	color: #005b7f;
+	padding: 0 0 10px 0;
+}
+
+p {
+	color: #333333;
+	line-height: 16px;
+	padding: 0 0 15px 0;
+}
+
+a {
+	color: #c37814;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #005b7f;
+}
+
+ul,
+ol {
+	color: #333333;
+	line-height: 16px;
+	padding: 0 0 15px 0;
+}
+
+ul li {
+	list-style-type: disc;
+	margin: 0 0 0 35px;
+}
+
+ol li {
+	list-style-type: decimal;
+	margin: 0 0 0 35px;
+}

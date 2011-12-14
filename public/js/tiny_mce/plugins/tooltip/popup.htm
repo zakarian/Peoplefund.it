@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#tooltip.tooltip_title}</title>
+	<script language="javascript" type="text/javascript" src="/js/tiny_mce/tiny_mce_popup.js"></script>
+	<script language="javascript" type="text/javascript">
+	<!--
+		function insertTooltip() {
+			var data = {
+				title: document.getElementById('ttitle').value,
+				text: document.getElementById('ttext').value,
+				footer: document.getElementById('tfooter').value
+			};
+
+            try {
+			    tinyMCE.execCommand('mceInsertTooltip', 0, data);
+            } catch(e) { }
+
+			tinyMCEPopup.close();
+		}
+	//-->
+	</script>
+	<base target="_self" />
+</head>
+<body> 
+	<div class="tabs">
+		<ul>
+			<li id="general_tab" class="current"><span><a name="tooltip" style="cursor: pointer;">{#tooltip.tooltip_title}</a></span></li>
+		</ul>
+	</div>
+	<form onsubmit="insertTooltip();return false;">
+		<div class="panel_wrapper" style="overflow: auto;">
+			<div style="width: 100%; float: left; margin-top: 5px;">
+				<input type="text" id="ttitle" name="title" style="float: right; width:180px;" /> {#tooltip.title}: 
+			</div>
+			<div style="width: 100%; float: left; margin-top: 10px;">
+				<textarea style="float: right; width:180px; height: 40px;" id="ttext" name="text"></textarea> {#tooltip.text}: 
+			</div>
+			<div style="width: 100%; float: left; margin-top: 10px;">
+				<input type="text" id="tfooter" name="footer" style="float: right; width:180px;" /> {#tooltip.footer}: 
+			</div>
+		</div>
+		<div class="mceActionPanel" style="width: 100%; float: left; margin-top: 10px;">
+			<div style="float: left">
+				<input type="button" id="insert" name="insert" value="{#insert}" onclick="insertTooltip();" />
+			</div>
+
+			<div style="float: right">
+				<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+			</div>
+		</div>
+	</form>
+</body> 
+</html> 

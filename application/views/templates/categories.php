@@ -1,0 +1,1 @@
+<li><a href="/projects/search/category:<?php echo urlencode(h(st($row->slug)))?>/" title="<?php echo h(st($row->title))?>"><?php echo h(st($row->title))?></a></li>
