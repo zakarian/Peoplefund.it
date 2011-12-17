@@ -1,13 +1,13 @@
 $( document ).ready( function() {
 
 	$( '#fb-login' ).click( function() {
-		FB.login( handleSessionResponseConnect, { perms: 'email' } );
+		FB.login( handleSessionResponseConnect, { scope: 'email' } );
 
 		return false;
 	});
 
 	$( '#fb-add-connect' ).click( function() {
-		FB.login( handleSessionResponseAddConnect, { perms: 'email' } );
+		FB.login( handleSessionResponseAddConnect, { scope: 'email' } );
 
 		return false;
 	});
@@ -23,20 +23,19 @@ $( document ).ready( function() {
 var ajax = false;
 
 function handleSessionResponseConnect(response) {
-	if (!response.session) {
+	if (!response.authResponse) {
 		return;
 	}
 
 	FB.api( '/me', function( user ) {
 		var data = {};
 
-		data['uid'] = data['fb_uid'] = FB.getSession().uid;
+		data['uid'] = data['fb_uid'] = (user.id ? user.id : '');
 		data['name'] = ( user.name ? user.name : '' );
 		data['username'] = ( user.username ? user.username : '' );
 		data['email'] = ( user.email ? user.email : '' );
 		data['pic'] = 'http://graph.facebook.com/' + data['uid'] + '/picture';
 		data['pic_big'] = 'http://graph.facebook.com/' + data['uid'] + '/picture?type=large';
-		data['session_key'] = FB.getSession().session_key;
 
 	    $.ajax({
 			url: '/user/fb_connect/',
@@ -58,20 +57,19 @@ function handleSessionResponseConnect(response) {
 
 // Add connection
 function handleSessionResponseAddConnect(response) {
-	if (!response.session) {
+	if (!response.authResponse) {
 		return;
 	}
 
 	FB.api( '/me', function( user ) {
 		var data = {};
 		
-		data['uid'] = FB.getSession().uid;
+		data['uid'] = (user.id ? user.id : '');
 		data['name'] = ( user.name ? user.name : '' );
 		data['username'] = ( user.username ? user.username : '' );
 		data['email'] = ( user.email ? user.email : '' );
 		data['pic'] = 'http://graph.facebook.com/' + user.username + '/picture';
 		data['pic_big'] = 'http://graph.facebook.com/' + user.username + '/picture?type=large';
-		data['session_key'] = FB.getSession().session_key;
 
 		$.ajax({
 			url: '/user/add_facebook/',
@@ -87,7 +85,7 @@ function handleSessionResponseAddConnect(response) {
 
 // Remove connection
 function handleSessionResponseRemoveConnect(response) {
-	if (!response.session) {
+	if (!response.authResponse) {
 		return;
 	}
 
